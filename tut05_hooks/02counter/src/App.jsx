@@ -16,6 +16,7 @@ function App() {
 
   let removeValue = () => {
     // ager 1 se niche value na jaye to if statement ka use kar sakte he
+    // ager negetive value me le jana ho to if condition ko hata denge
     if (!(counter == 1) )
     counter = counter - 1;
     console.log("removing value", counter);
