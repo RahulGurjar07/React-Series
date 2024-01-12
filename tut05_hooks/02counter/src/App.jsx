@@ -22,6 +22,7 @@ function App() {
 
     // isi ko prevCounter me store karke kare to ek baar value ko add kar sakte he
 
+    // tutorial number 08 
     setCounter(prevCounter => prevCounter + 1);
     setCounter(prevCounter => prevCounter + 1);
     setCounter(prevCounter => prevCounter + 1);
