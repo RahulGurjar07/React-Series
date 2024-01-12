@@ -8,10 +8,25 @@ function App() {
   let [counter, setCounter] = useState(15)
   // let counter = 15;
 
-  let addValue = () => {
-    counter = counter+1;
-    console.log("clicked adding value", counter);
-    setCounter(counter);
+  let  addValue = () => {
+    // counter = counter+1;
+    // console.log("clicked adding value", counter);
+    // setCounter(counter);
+
+    // setCounter ko duplicate kar de to ek baar me coute increase hoga ager ye dekana he to previes value ka option hota he use is prakar kar sakte he
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    
+    // is prakar karne se kitana hi kare value sirf ek baar update hogi par 
+
+    // isi ko prevCounter me store karke kare to ek baar value ko add kar sakte he
+
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    console.log(counter);
   }
 
   let removeValue = () => {
@@ -27,7 +42,7 @@ function App() {
   return (
     <>
       <h1>React series from chai or code</h1>
-      <h2>Counter value: {setCounter}</h2>
+      <h2>Counter value: {counter}</h2>
 
       <button
       onClick={addValue}
