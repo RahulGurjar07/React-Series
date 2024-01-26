@@ -16,7 +16,7 @@ function App() {
     // setCounter ko duplicate kar de to ek baar me coute increase hoga ager ye dekana he to previes value ka option hota he use is prakar kar sakte he
     // setCounter(counter+1);
     // setCounter(counter+1);
-    // setCounter(counter+1);
+    // setCounter(counter+1);         
     
     // is prakar karne se kitana hi kare value sirf ek baar update hogi par 
 
